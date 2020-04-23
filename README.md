@@ -27,7 +27,7 @@ const App = () => {
   
 ## Question 02
 The following React application re-renders `MessageComponent` every time that state changes, whether we changed the `count` or `value`.
-Update the application so `MessageComponent` will only renders when `this.state.value` changes.
+Update the application so `MessageComponent` will only renders when `this.state.value` is changed.
 ```javascript
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
