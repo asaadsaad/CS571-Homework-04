@@ -26,8 +26,7 @@ const App = () => {
 ```
   
 ## Question 02
-1. Convert the following App component from class-based component to function-based component
-2. This React application re-renders `MessageComponent` every time the state changes, whether we changed the `count` or `value`. Persist the Application state by using `useState()`.
+1. Convert the following App component from class-based component to function-based component. Persist the Application state by using `useState()`.
 ```javascript
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
