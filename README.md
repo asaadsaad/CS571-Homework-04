@@ -65,6 +65,6 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 
 ```
-3. Persist the Application state in two ways: first by using `useState` and then by using `useContext`.
+3. Persist the Application state in two ways: first by using `useState()` and then by using `useContext()`.
 4. Update the application so `CounterComponent` and `MessageComponent` will receive their `count` and `message` values from  a global `AppContext` context object.
-5. Update the application so `MessageComponent` will only renders when `this.state.value` is changed.
+5. Update the application so `MessageComponent` will only renders when the state `value` is changed.
