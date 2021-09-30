@@ -27,7 +27,7 @@ const App = () => {
   
 ## Question 02
 1. Convert the following App component from class-based component to function-based component
-2. This React application re-renders `MessageComponent` every time the state changes, whether we changed the `count` or `value`. Update the application so `MessageComponent` will only renders when `this.state.value` is changed.
+2. This React application re-renders `MessageComponent` every time the state changes, whether we changed the `count` or `value`.
 ```javascript
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
@@ -65,3 +65,6 @@ const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
 
 ```
+3. Persist the Application state in two ways: first by using `useState` and then by using `useContext`.
+4. Update the application so `CounterComponent` and `MessageComponent` will receive their `count` and `message` values from  a global `AppContext` context object.
+5. Update the application so `MessageComponent` will only renders when `this.state.value` is changed.
