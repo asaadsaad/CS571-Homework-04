@@ -26,44 +26,5 @@ const App = () => {
 ```
   
 ## Question 02
-1. Convert the following App component from class-based component to function-based component. Persist the Application state by using `useState()`.
-```javascript
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-
-const MessageComponent = props => {
-  console.log(`rendering MSG`);
-  return <div>{props.message}</div>;
-};
-
-const CounterComponent = props => <strong>{props.count}</strong>;
-
-class App extends Component {
-  state = { count: 0, value: "my message goes here" };
-
-  handleChange = e => this.setState({ value: e.target.value });
-  handleClick = () => this.setState(({ count }) => ({ count: count + 1 }));
-
-  render() {
-    const { count, value } = this.state;
-
-    return (
-          <div>
-            <CounterComponent count={count} />
-        
-            <button type="button" onClick={this.handleClick}>Increase Count</button>
-            <input type="text" value={value} onChange={this.handleChange} />
-
-            <MessageComponent message={value} />
-          </div>
-    );
-  }
-}
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);
-
-```
-2. Update the application and persist the state by using `useContext()`.
-3. Update the application so `CounterComponent` and `MessageComponent` will receive their `count` and `message` values from  a global `AppContext` context object.
-4. Update the application so `MessageComponent` will only renders when the state `value` is changed.
+1. Convert Homework 03 (Calculator App) and persist the state by using `useReducer()`. Maintain a pure Reducer function.
+2. Lift up the state to be global using `useContext()`. Do not provide `dispatch()` method, but instead pass helper functions.
